@@ -1,4 +1,4 @@
-[{"company":"Hettinger-Herzog","position":"Health Coach I","status":"declined","jobType":"full-time","createdBy":"641ae13e738f4b0fdefbd1dc","createdAt":"12/13/2022"},
+export const data =  [{"company":"Hettinger-Herzog","position":"Health Coach I","status":"declined","jobType":"full-time","createdBy":"641ae13e738f4b0fdefbd1dc","createdAt":"12/13/2022"},
 {"company":"Hayes LLC","position":"Design Engineer","status":"declined","jobType":"remote","createdBy":"641ae13e738f4b0fdefbd1dc","createdAt":"6/19/2021"},
 {"company":"Bode, Von and Abernathy","position":"Administrative Officer","status":"declined","jobType":"remote","createdBy":"641ae13e738f4b0fdefbd1dc","createdAt":"2/14/2021"},
 {"company":"Rosenbaum LLC","position":"Developer II","status":"interview","jobType":"internship","createdBy":"641ae13e738f4b0fdefbd1dc","createdAt":"11/23/2022"},
