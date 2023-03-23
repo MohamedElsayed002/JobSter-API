@@ -32,7 +32,6 @@ const errorHandlerMiddleware  = (err,req,res,next) => {
     }
 
     res.status(customError.statusCode).json({ msg: customError.message })
-    next(customError)
 
 }
 
