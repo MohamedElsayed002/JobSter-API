@@ -26,12 +26,13 @@ export const register = async (req,res) => {
 export const login = async (req,res) => {
     const {email , password} = req.body 
     if(!email || !password) {
-        res.status(StatusCodes.BAD_REQUEST).json({message : 'Invalid email or password'})
-        // throw new   BadRequestError('please provide email and password')
+        // res.status(StatusCodes.BAD_REQUEST).json({message : 'Invalid email or password'})
+        throw new   BadRequestError('please provide email and password')
     }
     const user = await userModel.findOne({email})
     if(!user) {
         res.status(StatusCodes.UNAUTHORIZED).json({message : "Invalid credentials"})
+        throw new UnauthenticatedError('NO FOUND')
     }
     let matchPassword = await  bcrypt.compare(password, user.password )
     if(!matchPassword) {
